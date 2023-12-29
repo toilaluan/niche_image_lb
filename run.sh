@@ -1,3 +1,4 @@
+sudo docker network create --driver=bridge nichenet 
 sudo docker rm haproxy
 sudo docker run \
    --name haproxy \
@@ -6,5 +7,5 @@ sudo docker run \
    -p 15000:15000 \
    -p 15001:15001 \
    -p 15002:15002 \
-   -p 8404:8404 \
+   -p 8404:14999 \
    haproxy
