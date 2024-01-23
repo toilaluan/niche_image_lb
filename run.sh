@@ -5,6 +5,7 @@ sudo docker run \
    --net nichenet \
    -v ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg \
    -v ./nicheimage.pem:/etc/ssl/certs/nicheimage.pem \
+   -p 8080:8080 \
    -p 17000:17000 \
    -p 15000:15000 \
    -p 15001:15001 \
